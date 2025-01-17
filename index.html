@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <img class="hero" src="images/grocery.png" alt="grocery" />
+
+
+      <h1>Grocery List</h1>
+
+      <div class="input-new">
+ <input type="text" id="add-new" placeholder="Add New Item" />
+ <img id="plus-button" src="images/add.svg" alt="plus" /></div>
+
+
+        <div class="fav-menu">
+          <p>Fav</p>
+          <img
+            id="fav-drop"
+            src="images/arrow_drop_down.svg"
+            alt="arrow-down"
+          />
+        </div>
+      </div>
+
+      <!-- dropdown menu -->
+
+      <div id="dropdown" class="hide">
+        <div class="list-item" data-id="eggs">
+          <p class="drop-text">Eggs</p>
+          <img src="images/add_circle.svg" alt="plus" />
+        </div>
+
+        <div class="list-item" data-id="coffee">
+          <p class="drop-text" value="Coffee">Coffee</p>
+          <img src="images/add_circle.svg" alt="plus" />
+        </div>
+
+        <div class="list-item">
+          <p class="drop-text" data-id="milk">Milk</p>
+          <img src="images/add_circle.svg" alt="plus" />
+        </div>
+
+        <div class="list-item" data-id="tea">
+          <p class="drop-text">Tea</p>
+          <img src="images/add_circle.svg" alt="plus" />
+        </div>
+
+        <div class="list-item" data-id="bread">
+          <p class="drop-text">Bread</p>
+          <img src="images/add_circle.svg" alt="plus" />
+        </div>
+
+        <div class="list-item" data-id="soap">
+          <p class="drop-text">Soap</p>
+          <img src="images/add_circle.svg" alt="plus" />
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <div class="item">
+        <div class="check-item">
+          <input class="checkbox" type="checkbox" />
+          <p class="list-item">Toothpaste</p>
+        </div>
+        <img class="delete-circle" src="images/delete.svg" alt="bin" />
+      </div>
+
+      <div class="item">
+        <div class="check-item">
+          <input class="checkbox" type="checkbox" />
+          <p class="list-item">Soy Sauce</p>
+        </div>
+        <img class="delete-circle" src="images/delete.svg" alt="bin" />
+      </div>
+
+      <div class="item">
+        <div class="check-item">
+          <input class="checkbox" type="checkbox" />
+          <p class="list-item">Olive Oil</p>
+        </div>
+        <img class="delete-circle" src="images/delete.svg" alt="bin" />
+      </div>
+
+      <div class="item">
+        <div class="check-item">
+          <input class="checkbox" type="checkbox" />
+          <p class="list-item">Broccoli</p>
+        </div>
+        <img class="delete-circle" src="images/delete.svg" alt="bin" />
+      </div>
+
+      <div class="item">
+        <div class="check-item">
+          <input class="checkbox" type="checkbox" />
+          <p class="list-item">Tofu</p>
+        </div>
+        <img class="delete-circle" src="images/delete.svg" alt="bin" />
+      </div>
+    </section>
+
+    <button class="mark">
+      <img src="images/check.svg" alt="check" />Mark all as done
+    </button>
+
+    <button class="delete-all">
+      Delete All <img src="images/bin-white.svg" alt="bin" width="24px" />
+    </button>
+
+    <!-- success popup -->
+
+    <div id="popup">
+      <div class="lemon-orange"></div>
+      <div class="card">
+        <p class="well-done">Well Done!</p>
+        <p class="popup-text">Grocery Shopping <br /><span>Completed!</span></p>
+      </div>
+    </div>
+
+    <div id="overlay" class="hide"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
